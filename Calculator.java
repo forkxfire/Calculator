@@ -147,7 +147,22 @@ public class Calculator {
 
 					me.max_rolls();
 					dueler.max_rolls();
-
+					
+					//accuracy changes when we switch weapon
+					
+					if(me.max_attack_roll > dueler.max_defense_roll){
+						accuracyMe=1-(dueler.max_defense_roll+1)/(2*me.max_attack_roll);
+					}
+					else{
+						accuracyMe=(me.max_attack_roll-1)/(2*dueler.max_defense_roll);
+					}
+					
+					if(dueler.max_attack_roll > me.max_defense_roll){
+						accuracyDueler=1-(me.max_defense_roll+1)/(2*dueler.max_attack_roll);
+					}
+					else{
+						accuracyDueler=(dueler.max_attack_roll-1)/(2*me.max_defense_roll);
+					}
 
 
 				}
@@ -161,7 +176,21 @@ public class Calculator {
 					dueler.max_rolls();
 
 
-
+					//accuracy changes when we switch weapon
+					
+					if(me.max_attack_roll > dueler.max_defense_roll){
+						accuracyMe=1-(dueler.max_defense_roll+1)/(2*me.max_attack_roll);
+					}
+					else{
+						accuracyMe=(me.max_attack_roll-1)/(2*dueler.max_defense_roll);
+					}
+					
+					if(dueler.max_attack_roll > me.max_defense_roll){
+						accuracyDueler=1-(me.max_defense_roll+1)/(2*dueler.max_attack_roll);
+					}
+					else{
+						accuracyDueler=(dueler.max_attack_roll-1)/(2*me.max_defense_roll);
+					}
 
 
 				}
@@ -174,7 +203,21 @@ public class Calculator {
 					me.max_rolls();
 					dueler.max_rolls();
 
-
+					//accuracy changes when we switch weapon
+					
+					if(me.max_attack_roll > dueler.max_defense_roll){
+						accuracyMe=1-(dueler.max_defense_roll+1)/(2*me.max_attack_roll);
+					}
+					else{
+						accuracyMe=(me.max_attack_roll-1)/(2*dueler.max_defense_roll);
+					}
+					
+					if(dueler.max_attack_roll > me.max_defense_roll){
+						accuracyDueler=1-(me.max_defense_roll+1)/(2*dueler.max_attack_roll);
+					}
+					else{
+						accuracyDueler=(dueler.max_attack_roll-1)/(2*me.max_defense_roll);
+					}
 
 
 				}
@@ -366,19 +409,19 @@ public class Calculator {
 
 		//		Calculator instance = new Calculator(99,99,91,99,90,99,95,99);
 
-		Calculator.fightType="dscim";
+		Calculator.fightType="ddsToDscim";
 		
 		//fight type  = ddsToDscim , ddsToWhip , ddsToTentacle , dscim, whip, boxing ,rscim
 		
 		
 		
-		//		Calculator instance = new Calculator(62,77,2,68,60,81,1,71);
+				Calculator instance = new Calculator(62,77,2,68,60,81,1,71);
 
 
 		//		Calculator instance = new Calculator(60,70,15,65,60,70,1,65);
 		//		Calculator instance = new Calculator(62,77,2,68,60,81,1,71);
 
-		Calculator instance = new Calculator(60,70,15,65,60,70,1,65);	
+//		Calculator instance = new Calculator(60,70,15,65,60,70,1,65);	
 
 
 		System.out.println("");

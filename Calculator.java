@@ -326,7 +326,7 @@ public class Calculator {
 			float mar = (float) Math.floor(ea * (1 + attack_bonus/64));
 
 
-			max_attack_roll = (mar * multiplier)/10;
+			max_attack_roll = mar/10;
 
 
 			int cumulativeStr = (strength_level + strength_style);
